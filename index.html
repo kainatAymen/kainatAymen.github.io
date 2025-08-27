@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kainat Aymen — CV</title>
+  <style>
+    :root{
+      --bg:#0b1220; /* page bg */
+      --card:#0f172a; /* card */
+      --muted:#94a3b8; /* text-muted */
+      --text:#e2e8f0; /* text */
+      --accent:#22d3ee; /* cyan */
+      --chip:#1e293b; /* chip bg */
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial;line-height:1.55;color:var(--text);background:linear-gradient(180deg,#0a0f1d,#0e1729 60%,#0a1526)}
+
+    .container{max-width:980px;margin:40px auto;padding:24px}
+    .sheet{background:var(--card);border:1px solid #1f2a44;border-radius:22px;box-shadow:0 10px 30px rgba(0,0,0,.35);overflow:hidden}
+    .header{display:flex;gap:24px;align-items:center;padding:28px 28px 8px;border-bottom:1px solid #1f2a44;background:linear-gradient(90deg,rgba(34,211,238,.08),transparent)}
+    .avatar{width:88px;height:88px;border-radius:20px;background:linear-gradient(135deg,#1e293b,#0b1220);display:flex;align-items:center;justify-content:center;color:var(--accent);font-weight:700;font-size:28px;border:1px solid #22314f}
+    .hgroup h1{margin:0;font-size:32px;letter-spacing:.3px}
+    .hgroup p{margin:6px 0 0;color:var(--muted)}
+
+    .meta{margin-left:auto;text-align:right;color:var(--muted);font-size:14px}
+    .meta a{color:var(--text);text-decoration:none}
+    .meta a:hover{color:var(--accent)}
+
+    .body{display:grid;grid-template-columns:2fr 1.2fr;gap:26px;padding:22px}
+
+    .card{background:#0b1426;border:1px solid #1f2a44;border-radius:18px;padding:18px}
+    .card h3{margin:0 0 10px;font-size:18px;color:#cde7ff}
+    .card p{margin:0 0 10px}
+
+    .list{display:grid;gap:10px}
+    .item h4{margin:0 0 4px;font-size:16px}
+    .item .sub{color:var(--muted);font-size:14px}
+
+    .chips{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:var(--chip);border:1px solid #27334d;color:#d3e3ff;padding:6px 10px;border-radius:999px;font-size:13px}
+
+    .footer{padding:16px 22px 26px;color:var(--muted);font-size:12px;text-align:center}
+
+    .btn-print{position:sticky;top:16px;float:right;margin:16px;background:transparent;border:1px solid #27334d;color:#d3e3ff;padding:8px 12px;border-radius:10px;cursor:pointer}
+    .btn-print:hover{border-color:var(--accent);color:#eaffff}
+
+    @media (max-width: 860px){
+      .body{grid-template-columns:1fr}
+      .meta{text-align:left;margin:8px 0 0}
+      .header{flex-direction:column;align-items:flex-start}
+      .btn-print{float:none}
+    }
+
+    /* Print styles */
+    @media print{
+      body{background:white}
+      .container{margin:0;max-width:100%;padding:0}
+      .sheet{border:none;box-shadow:none}
+      .btn-print{display:none}
+      .card{background:white;border-color:#e5e7eb}
+      .header{background:white;border-color:#e5e7eb}
+      .hgroup h1{color:black}
+      .hgroup p,.meta,.card p,.item .sub{color:#4b5563}
+      .chip{border-color:#d1d5db;color:#111827;background:#f3f4f6}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button class="btn-print" onclick="window.print()">Print / Save as PDF</button>
+
+    <section class="sheet">
+      <!-- Header -->
+      <div class="header">
+        <div class="avatar" aria-hidden="true">KA</div>
+        <div class="hgroup">
+          <h1>Kainat Aymen</h1>
+          <p>Graphic Designer & WordPress Web Developer</p>
+        </div>
+        <div class="meta">
+          <div><strong>Email:</strong> <a href="mailto:you@example.com">you@example.com</a></div>
+          <div><strong>Phone:</strong> +92-3XX-XXXXXXX</div>
+          <div><strong>Location:</strong> Pakistan</div>
+          <div><strong>Portfolio:</strong> <a href="#">your-portfolio.com</a></div>
+          <div><strong>GitHub:</strong> <a href="#">github.com/yourhandle</a></div>
+        </div>
+      </div>
+
+      <!-- Body -->
+      <div class="body">
+        <div class="left">
+          <div class="card">
+            <h3>Profile</h3>
+            <p>
+              Motivated and detail‑oriented professional skilled in <strong>graphic design</strong> and <strong>WordPress web development</strong>.
+              Comfortable building clean, responsive websites and creating brand‑ready visuals (social posts, banners, product designs).
+              Recently completed <strong>4 months</strong> of support work, collaborating with clients and resolving day‑to‑day technical issues.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Experience</h3>
+            <div class="list">
+              <div class="item">
+                <h4>Support Assistant (4 Months)</h4>
+                <div class="sub">Company / Remote — Jan 2024 – Apr 2024 (example)</div>
+                <ul>
+                  <li>Handled client queries, basic website updates, and content uploads in WordPress.</li>
+                  <li>Designed social media posts, product banners, and simple brand assets.</li>
+                  <li>Documented tasks and reported progress to the team daily.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Projects</h3>
+            <div class="list">
+              <div class="item">
+                <h4>Business Portfolio Website</h4>
+                <div class="sub">WordPress • Elementor • Responsive</div>
+                <p>Set up pages, sections, and contact forms; optimized for mobile; basic SEO and speed tweaks.</p>
+              </div>
+              <div class="item">
+                <h4>Branding Kit & Social Posts</h4>
+                <div class="sub">Canva / Photoshop</div>
+                <p>Designed logo options, color palette, and 12‑post social pack for a small business.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="right">
+          <div class="card">
+            <h3>Education</h3>
+            <div class="item">
+              <h4>BS / Graduation</h4>
+              <div class="sub">University of Mianwali — 2024</div>
+              <p>Major subjects related to Computer Science / IT.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Skills</h3>
+            <div class="chips">
+              <span class="chip">Graphic Designing</span>
+              <span class="chip">WordPress</span>
+              <span class="chip">Elementor</span>
+              <span class="chip">Canva</span>
+              <span class="chip">Adobe Photoshop (basic)</span>
+              <span class="chip">HTML & CSS (basic)</span>
+              <span class="chip">Content Uploading</span>
+              <span class="chip">Client Support</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Tools</h3>
+            <div class="chips">
+              <span class="chip">WordPress Admin</span>
+              <span class="chip">Elementor / Block Editor</span>
+              <span class="chip">Canva</span>
+              <span class="chip">Photoshop</span>
+              <span class="chip">GitHub (basic)</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Languages</h3>
+            <div class="chips">
+              <span class="chip">Urdu (Native)</span>
+              <span class="chip">English (Intermediate)</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <div class="footer">
+        ✦ References available on request · Last updated: <span id="dt"></span>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    // Set date in footer
+    const d = new Date();
+    document.getElementById('dt').textContent = d.toLocaleDateString();
+  </script>
+</body>
+</html>
+hello this is my cvgit

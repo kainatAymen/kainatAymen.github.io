@@ -1,102 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Kainat Aymen - CV</title>
+  <meta charset="UTF-8" />
+  <title>Kainat Aymen – CV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
+    :root { --text:#222; --muted:#555; --rule:#cfcfcf; }
+    * { box-sizing: border-box; }
     body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      margin: 24px;
       line-height: 1.6;
-      background-color: #f9f9f9;
-      color: #333;
+      background:#fff;
     }
-    .container {
-      max-width: 800px;
-      margin: auto;
-      background: #fff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    .wrap { max-width: 900px; margin: 0 auto; }
+    /* Header */
+    .top {
+      display: flex; flex-wrap: wrap; align-items: flex-start;
+      gap: 8px 24px; margin-bottom: 8px;
     }
-    h1 {
-      border-bottom: 2px solid #000;
-      padding-bottom: 5px;
-      color: #000;
+    .name { font-size: 26px; font-weight: 700; }
+    .role { font-size: 14px; color: var(--muted); margin-top: -4px; }
+    .contact { margin-left:auto; text-align:right; font-size:14px; }
+    .contact a { color:#0366d6; text-decoration:none; }
+    .contact a:hover { text-decoration:underline; }
+    /* Section */
+    .sec { margin-top: 18px; }
+    .sec h2{
+      font-size:16px; font-weight:700; color:#000;
+      border-bottom:1px solid var(--rule); padding-bottom:4px; margin:0 0 8px 0;
     }
-    h2 {
-      margin-top: 20px;
-      color: #000;
-    }
-    ul {
-      margin: 0;
-      padding-left: 20px;
-    }
-    .section {
-      margin-bottom: 20px;
+    .block-title { font-weight:700; }
+    .subtle { color: var(--muted); font-style: italic; }
+    ul { margin: 6px 0 0 18px; padding:0; }
+    li { margin: 2px 0; }
+    /* Print tweaks */
+    @media print {
+      body { margin: 12mm; }
+      a { color: inherit; text-decoration: none; }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Kainat Aymen</h1>
-    <p><strong>Email:</strong> kainataymen459@gmail.com</p>
-    <p><strong>Location:</strong> Islamabad, Pakistan</p>
+  <div class="wrap">
 
-    <div class="section">
-      <h2>Profile Summary</h2>
+    <!-- Header -->
+    <div class="top">
+      <div>
+        <div class="name">Kainat Aymen</div>
+        <div class="role">IT Graduate • Aspiring DevOps Engineer</div>
+      </div>
+      <div class="contact">
+        <div><a href="mailto:kainataymen459@gmail.com">kainataymen459@gmail.com</a></div>
+        <div>Islamabad, Pakistan</div>
+      </div>
+    </div>
+
+    <!-- Profile -->
+    <section class="sec">
+      <h2>Profile</h2>
       <p>
-        Motivated IT graduate with a strong interest in <strong>DevOps Engineering</strong> and 
-        hands-on experience in IT support. Skilled in <strong>WordPress development</strong> and 
-        <strong>graphic designing</strong> with certifications to back technical expertise. 
-        Passionate about learning new technologies and applying them in real-world projects.
+        Recent IT graduate with hands-on internship experience in <strong>WordPress</strong> and
+        <strong>Graphic Designing</strong>. Skilled in technical support, website management, and
+        eager to grow as a <strong>DevOps Engineer</strong>. Strong problem-solving skills with the ability
+        to work in fast-paced environments.
       </p>
-    </div>
+    </section>
 
-    <div class="section">
-      <h2>Education</h2>
-      <ul>
-        <li><strong>BS in Information Technology</strong>, University of Mianwali — 2044</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>Experience</h2>
-      <ul>
-        <li>
-          <strong>IT Support (Internship)</strong> — 4 Months  
-          <br>Assisted in troubleshooting hardware/software issues, managing user accounts, and 
-          providing technical support to staff.
-        </li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>Certifications</h2>
-      <ul>
-        <li>6-Month Certificate in WordPress Development</li>
-        <li>6-Month Certificate in Graphic Designing</li>
-      </ul>
-    </div>
-
-    <div class="section">
+    <!-- Skills -->
+    <section class="sec">
       <h2>Skills</h2>
       <ul>
-        <li>WordPress Website Development & Management</li>
-        <li>Graphic Designing (Logos, Banners, Social Media Content)</li>
-        <li>IT Support (Troubleshooting, System Assistance)</li>
-        <li>Basic Knowledge of DevOps Tools (interested in further learning)</li>
+        <li>WordPress Development &amp; Customization</li>
+        <li>Graphic Designing (Adobe Photoshop, Canva)</li>
+        <li>IT Support &amp; Troubleshooting</li>
+        <li>Basic Networking &amp; System Maintenance</li>
+        <li>Communication &amp; Teamwork</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="section">
+    <!-- Technical -->
+    <section class="sec">
+      <h2>Technical</h2>
+      <ul>
+        <li>Operating Systems: Windows, basic Linux</li>
+        <li>IT Support &amp; Management</li>
+        <li>Web Hosting &amp; Maintenance</li>
+        <li>Microsoft Office &amp; Reporting</li>
+        <li>Troubleshooting</li>
+      </ul>
+    </section>
+
+    <!-- Experience -->
+    <section class="sec">
+      <h2>Experience</h2>
+
+      <p class="block-title">Asra Communication — <span class="subtle">Intern (WordPress &amp; Graphic Designing)</span></p>
+      <p class="subtle">March 2024 – July 2024</p>
+      <ul>
+        <li>Assisted in website development and updates using WordPress.</li>
+        <li>Created graphic content for social media and websites.</li>
+        <li>Provided technical support and coordinated with the team.</li>
+      </ul>
+
+      <p class="block-title" style="margin-top:10px;">IT Support — <span class="subtle">Internship (4 Months)</span></p>
+      <ul>
+        <li>Assisted in troubleshooting technical issues.</li>
+        <li>Helped with system maintenance and user support tasks.</li>
+      </ul>
+    </section>
+
+    <!-- Education -->
+    <section class="sec">
+      <h2>Education</h2>
+      <p class="block-title">BS Information Technology</p>
+      <p class="subtle">University of Mianwali — Graduated 2024</p>
+    </section>
+
+    <!-- Languages -->
+    <section class="sec">
       <h2>Languages</h2>
       <ul>
-        <li>English — Fluent</li>
-        <li>Urdu — Native</li>
-        <li>Pashto — Proficient</li>
+        <li>English</li>
+        <li>Urdu</li>
+        <li>Pashto</li>
       </ul>
-    </div>
+    </section>
+
   </div>
 </body>
 </html>
